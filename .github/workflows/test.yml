@@ -10,9 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-
-    - run: npm ci
-    - run: npm test
-    - uses: ./
+    - uses: wesleytodd/javascript-action@master
       with:
         milliseconds: 1000
